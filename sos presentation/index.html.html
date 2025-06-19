@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Growth Blueprint for Studio Office Solutions | LFDM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; /* slate-100 */
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .section-fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .stat-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .number-animate {
+            transition: all 1.5s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-4">
+                    <!-- LFDM Logo -->
+                    <img class="h-10 w-auto" src="LFDM-LOGO.png" alt="LFDM Logo" onerror="this.style.display='none'">
+                     <span class="text-2xl font-light text-slate-300">x</span>
+                    <!-- SOS Text -->
+                    <span class="text-2xl font-bold text-slate-800">SOS</span>
+                </div>
+                <div class="hidden md:block">
+                     <a href="https://meeting.calendarhero.com/cody" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-600 text-white font-semibold px-5 py-3 rounded-lg hover:bg-indigo-700 transition-colors">Schedule a Call</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-24 md:py-32 bg-gradient-to-b from-white to-slate-100 section-fade-in">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <p class="text-lg font-semibold text-indigo-600">A Presentation for Jon Offerman & The SOS Team</p>
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mt-4 leading-tight">Your designs inspire. Your digital presence should too.</h1>
+                <p class="mt-8 text-xl text-slate-600 max-w-2xl mx-auto">Jon, we're huge admirers of the work you do at Studio Office Solutions. You create beautiful, functional spaces. But we've noticed a gap between the quality of your work and how it's discovered online. We see an incredible opportunity to change that.</p>
+                <div class="mt-10">
+                    <a href="#data-dive" class="inline-block bg-slate-800 text-white font-semibold px-6 py-4 rounded-lg hover:bg-slate-900 transition-colors">See the Opportunity</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Opportunity -->
+        <section class="py-20 md:py-28 bg-slate-100 section-fade-in">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold tracking-wider text-indigo-500 uppercase">The Current Landscape</h2>
+                    <p class="mt-2 text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">A Tale of Two Realities</p>
+                    <p class="mt-5 max-w-2xl mx-auto text-xl text-slate-500">Your brand has a stellar reputation offline, but online it's a different story. It’s like having a beautiful showroom hidden down an unmarked alley.</p>
+                </div>
+
+                <div class="mt-16 grid md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                        <h3 class="text-2xl font-bold text-slate-800">Reality #1: World-Class Design</h3>
+                        <p class="mt-4 text-slate-600">Your website is a perfect reflection of your brand: modern, minimalist, and visually stunning. It showcases your incredible portfolio and design-first approach. It's clear you're a boutique dealership that delivers premium, aspirational workspaces.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                        <h3 class="text-2xl font-bold text-slate-800">Reality #2: Digital Invisibility</h3>
+                        <p class="mt-4 text-slate-600">Despite its beauty, the website is nearly invisible to search engines for anything beyond your brand name. Potential clients looking for "office furniture NYC" or "corporate interior design Miami" are finding your competitors first. Let's change that.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Data Dive -->
+        <section id="data-dive" class="py-20 md:py-28 bg-white section-fade-in">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold tracking-wider text-indigo-500 uppercase">The Data Dive</h2>
+                    <p class="mt-2 text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">Let's Get Real: Your Digital Footprint</p>
+                    <p class="mt-5 max-w-2xl mx-auto text-xl text-slate-500">Numbers don't lie. We ran a deep analysis, and the data reveals a clear story. This isn't criticism; it's the blueprint for our starting point.</p>
+                </div>
+
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Stat Card: Organic Traffic -->
+                    <div class="stat-card text-center">
+                        <h3 class="text-lg font-semibold text-slate-500">Monthly Organic Traffic</h3>
+                        <p class="text-6xl font-extrabold text-indigo-600 mt-4 number-value" data-target="125">0</p>
+                        <p class="mt-4 text-slate-500">This is traffic from search engines. For a brand of your caliber in NY and Miami, there's immense room for growth.</p>
+                    </div>
+                    
+                    <!-- Stat Card: Authority Score -->
+                    <div class="stat-card text-center">
+                        <h3 class="text-lg font-semibold text-slate-500">Authority Score</h3>
+                        <p class="text-6xl font-extrabold text-purple-600 mt-4 number-value" data-target="9">0</p>
+                        <p class="mt-4 text-slate-500">Out of 100. This score reflects your site's overall SEO strength. Competitors like Empire Office are at 27. We can close this gap.</p>
+                    </div>
+                    
+                    <!-- Stat Card: Organic Keywords -->
+                    <div class="stat-card text-center">
+                        <h3 class="text-lg font-semibold text-slate-500">Organic Keywords</h3>
+                        <p class="text-6xl font-extrabold text-indigo-600 mt-4 number-value" data-target="55">0</p>
+                        <p class="mt-4 text-slate-500">The number of terms you rank for in Google's top 100. Most are branded terms, meaning people already know you.</p>
+                    </div>
+                </div>
+
+                <div class="mt-16 grid md:grid-cols-2 gap-8 items-start">
+                    <div class="stat-card">
+                         <h3 class="text-xl font-bold text-center mb-4">Branded vs. Non-Branded Traffic</h3>
+                        <div class="relative h-64 md:h-72">
+                           <canvas id="traffic-chart"></canvas>
+                        </div>
+                        <p class="mt-4 text-slate-600 text-center">Nearly half your search traffic comes from people already searching for your name. We need to capture the audience that doesn't know you exist yet but needs your services.</p>
+                    </div>
+                    <div class="stat-card">
+                         <h3 class="text-xl font-bold text-center mb-4">Top Organic Keywords</h3>
+                        <ul class="space-y-3 mt-6">
+                            <li class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                                <span class="font-medium">studio office solutions</span>
+                                <span class="text-sm font-bold text-green-600">Position: 1</span>
+                            </li>
+                            <li class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                                <span class="font-medium">jon offerman</span>
+                                <span class="text-sm font-bold text-green-600">Position: 1</span>
+                            </li>
+                            <li class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                                <span class="font-medium text-slate-400">sos furniture</span>
+                                <span class="text-sm font-bold text-orange-500">Position: 3</span>
+                            </li>
+                             <li class="flex justify-between items-center p-3 bg-slate-50 rounded-lg">
+                                <span class="font-medium text-slate-400">sos.com</span>
+                                <span class="text-sm font-bold text-orange-500">Position: 3</span>
+                            </li>
+                        </ul>
+                        <p class="mt-4 text-slate-600 text-center">You rank perfectly for your name, which is great! But notice the lack of high-intent, non-branded keywords like "NYC office design" or "Haworth dealer Miami".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why This Is Happening -->
+        <section class="py-20 md:py-28 bg-slate-100 section-fade-in">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-base font-semibold tracking-wider text-indigo-500 uppercase">The "Why" Behind the Numbers</h2>
+                <p class="mt-2 text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">It's Not by Accident, It's by Design</p>
+                <p class="mt-5 text-xl text-slate-500">Your current digital state is a direct result of a website designed for visuals, not for search engines. It's a common issue, and it's entirely fixable.</p>
+                <ul class="mt-8 text-left space-y-4 max-w-2xl mx-auto">
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-green-500 flex-shrink-0 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span><strong class="text-slate-800">Content Gaps:</strong> The site has minimal text. Search engines have very little content to read and understand what you do, which hurts your ability to rank for valuable terms.</span>
+                    </li>
+                    <li class="flex items-start">
+                         <svg class="h-6 w-6 text-green-500 flex-shrink-0 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span><strong class="text-slate-800">Missed SEO Opportunities:</strong> Elements like rich image descriptions (alt tags), detailed project case studies as web pages (not just PDFs), and a strategic blog are missing pieces of the puzzle.</span>
+                    </li>
+                     <li class="flex items-start">
+                         <svg class="h-6 w-6 text-green-500 flex-shrink-0 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span><strong class="text-slate-800">Low Domain Authority:</strong> Without valuable content to attract links from other reputable sites, your site's authority remains low, making it harder to outrank established competitors.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Introducing LFDM -->
+        <section class="py-20 md:py-28 bg-white section-fade-in">
+             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+                    <div>
+                        <h2 class="text-base font-semibold tracking-wider text-indigo-500 uppercase">How We Can Help</h2>
+                        <p class="mt-2 text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">We're Marketing Advisors, Not Just Another Agency.</p>
+                        <p class="mt-5 text-xl text-slate-500">Alright, let's be honest. You don't need another agency that just checks boxes. You need a strategic partner who rolls up their sleeves with you. Our internal motto is simple: <strong class="text-slate-700">"to be good people with great solutions."</strong> And we actually mean it.</p>
+                        <p class="mt-5 text-xl text-slate-500">We specialize in uncovering the hidden growth levers in businesses like yours. We believe in custom-fit solutions, not cookie-cutter templates. Your business isn't a carbon copy of someone else's, so why should your marketing be?</p>
+                    </div>
+                    <div class="mt-10 lg:mt-0">
+                        <div class="bg-indigo-50 p-10 rounded-2xl">
+                             <h3 class="text-2xl font-bold text-slate-800">Our Core Philosophy</h3>
+                             <ul class="mt-6 space-y-4">
+                                <li class="flex items-start">
+                                    <svg class="h-6 w-6 text-indigo-500 flex-shrink-0 mr-3"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" /></svg>
+                                    <span><strong class="text-slate-700">Authenticity:</strong> We keep it real. No corporate jargon, no disingenuous claims.</span>
+                                </li>
+                                <li class="flex items-start">
+                                     <svg class="h-6 w-6 text-indigo-500 flex-shrink-0 mr-3" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>
+                                    <span><strong class="text-slate-700">Value & Substance:</strong> Every action is designed to provide tangible value—more leads, higher visibility, real growth.</span>
+                                </li>
+                                <li class="flex items-start">
+                                     <svg class="h-6 w-6 text-indigo-500 flex-shrink-0 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="10" /> <line x1="12" y1="16" x2="12" y2="12" /> <line x1="12" y1="8" x2="12.01" y2="8" /></svg>
+                                    <span><strong class="text-slate-700">Clarity & Simplicity:</strong> We make the complex simple. You'll always know what we're doing and why it matters to your bottom line.</span>
+                                </li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="contact" class="bg-slate-800 section-fade-in">
+            <div class="max-w-4xl mx-auto text-center py-20 md:py-24 px-4">
+                 <h2 class="text-3xl md:text-4xl font-extrabold text-white">Ready to see what's possible?</h2>
+                 <p class="mt-4 text-xl text-slate-300">Look, if anything I’ve said here resonates—if you're ready for a marketing partner who’s as invested in your success as you are—then I’d genuinely love to chat. No high-pressure sales tactics, just a real conversation about your business, your goals, and how we can help you get there.</p>
+                 <div class="mt-8">
+                     <a href="https://meeting.calendarhero.com/cody" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-slate-800 font-semibold px-8 py-4 rounded-lg hover:bg-slate-200 transition-colors text-lg">Schedule a Call</a>
+                 </div>
+                 <p class="mt-6 text-slate-400">Let's build something amazing, together.</p>
+                 <p class="mt-8 text-white font-bold text-xl">- Cody & the LFDM Team</p>
+            </div>
+        </section>
+
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Intersection Observer for fade-in animations
+            const sections = document.querySelectorAll('.section-fade-in');
+            
+            const observer = new IntersectionObserver((entries, observerInstance) => {
+                entries.forEach(entry => {
+                    // When an element comes into view...
+                    if (!entry.isIntersecting) return;
+
+                    const section = entry.target;
+                    section.classList.add('visible');
+
+                    // Animate numbers
+                    const numbers = section.querySelectorAll('.number-value');
+                    numbers.forEach(numberEl => {
+                        const target = +numberEl.getAttribute('data-target');
+                        animateValue(numberEl, 0, target, 1500);
+                    });
+                    
+                    // Initialize charts
+                    const chartCanvas = section.querySelector('#traffic-chart');
+                    if(chartCanvas) {
+                        renderTrafficChart(chartCanvas);
+                    }
+                    
+                    // *** DEFINITIVE FIX ***
+                    // Unobserve the element after the animation has been triggered once.
+                    // This prevents the callback from firing again for this element.
+                    observerInstance.unobserve(section);
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Function to animate numbers from a start to an end value
+            function animateValue(obj, start, end, duration) {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    obj.innerHTML = Math.floor(progress * (end - start) + start).toLocaleString();
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+
+            // Chart.js - Doughnut Chart for Traffic Source
+            // A variable to hold the chart instance to prevent re-rendering.
+            let trafficChartInstance = null;
+            function renderTrafficChart(canvasElement) {
+                // If a chart instance already exists, do nothing.
+                if (trafficChartInstance) {
+                    return;
+                }
+                const ctx = canvasElement.getContext('2d');
+                trafficChartInstance = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Branded', 'Non-Branded'],
+                        datasets: [{
+                            data: [47.9, 52.1],
+                            backgroundColor: [
+                                '#4f46e5', // indigo-600
+                                '#d1d5db'  // gray-300
+                            ],
+                            borderColor: '#fff',
+                            borderWidth: 4,
+                            hoverOffset: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        cutout: '70%',
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    padding: 20,
+                                    color: '#475569', // slate-600
+                                    font: {
+                                        size: 14,
+                                        family: 'Inter',
+                                        weight: '500'
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return `${context.label}: ${context.raw}%`;
+                                    }
+                                }
+                            }
+                        },
+                        animation: {
+                            animateScale: true,
+                            animateRotate: true
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
